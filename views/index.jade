@@ -1,0 +1,35 @@
+doctype html
+html
+	head
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		link(rel='stylesheet', href='/css/bootstrap.css')
+		link(rel='stylesheet', href='/css/style.css')
+		script(src='//code.jquery.com/jquery-1.11.0.min.js')
+		script(src='/js/bootstrap.js')
+		script(src='/socket.io/socket.io.js')
+		script(src='/js/index.js')
+		title Chatroom
+	body
+		div.container
+			h1.header Chatroom 
+				span.glyphicon.glyphicon-comment#logo
+			div.chatContainer.row
+				div.column.col-xs-8
+					div.messagesContainer#messages
+					div.messageFormContainer
+						form#messageForm
+							div.input-group.input-group-lg
+								textarea.messageInput.form-control(rows="3", placeholder="Share something!", tabindex="2")#outgoingMessage
+								span.sendContainer.input-group-btn
+									button.sendButton.btn.btn-primary(type="button", tabindex="3")#send Chat
+				div.column.col-xs-4
+					div.participantsContainer
+						div.nameContainer
+							input.nameInput.form-control(type="text", value="Anonymous", tabindex="1", data-toggle="tooltip", data-placement="left", title=" Your Name")#name
+						br
+						span.glyphicon.glyphicon-user
+						b  Participants
+						br
+						div#participants
+
+		

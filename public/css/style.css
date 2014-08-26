@@ -1,0 +1,113 @@
+html {
+	height: 100%;
+}
+
+body {
+	background-color: #f2f2f2;
+	height:100%;
+}
+
+.container {
+	height: 100%;
+}
+
+.header {
+	padding-bottom: 9px;
+	margin: 40px 0 20px;
+}
+
+#logo {
+	-webkit-transition: color 0.75s ease-in-out;
+    -moz-transition:    color 0.75s ease-in-out;
+    -ms-transition:     color 0.75s ease-in-out;
+    transition:         color 0.75s ease-in-out;
+}
+
+#logo.on {
+	color: #12c700;
+}
+
+#logo.disconnected {
+	color: #e51c23;
+}
+
+.chatContainer {
+	height: 88%;
+}
+
+.column {
+	height: inherit;
+}
+
+.messagesContainer {
+	overflow-y: auto;
+	height: inherit !important;
+	border-top: 1px solid rgba(0,0,0,0.2);
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.message {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.messageFormContainer {
+	padding-top: 20px;
+	height: auto !important;
+}
+
+#messageForm {
+}
+
+.messageInput {
+	resize: none;
+	font-size: 14px !important;
+	height: inherit !important;
+}
+
+.messageInput:focus {
+	border-color: rgba(18, 199, 0, 0.8);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+	outline: 0 none;
+}
+
+.nameContainer {
+
+}
+
+.nameInput:focus {
+	border-color: rgba(18, 199, 0, 0.8);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+	outline: 0 none;
+}
+
+.participantsContainer {
+	height: inherit;
+}
+
+#participants {
+	overflow-y: auto;
+	height: 100%;
+}
+
+.sendButton {
+	height: inherit !important;
+	background-color: #12c700;
+	border-color: #12c700;
+}
+
+.sendButton:hover {
+	background-color: #259b24;
+	border-color: #259b24;
+}
+
+.sendButton:focus {
+	background-color: #259b24;
+	border-color: #259b24;
+}
+
+.sendContainer {
+	height: 76px !important; /* 76px == .input-group.input-group-lg height*/
+}
