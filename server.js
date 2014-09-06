@@ -31,11 +31,11 @@ var participants = [];
 app.set('ipaddr', '127.0.0.1');
 
 //Server's port number
-app.set('port', 8080);
+app.set('port', (process.env.PORT || 8080));
 
 //Specify the views folder
 app.set('views', path.join(__dirname, 'views'));
-console.log(app.get('view_engine'));
+
 //View engine is Jade
 app.set('view engine', 'jade');
 
