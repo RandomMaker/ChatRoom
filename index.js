@@ -28,11 +28,11 @@ var participants = [];
 /* Server config */
 
 //Server's IP address
-app.set('ipaddr', '127.0.0.1');
+//app.set('ipaddr', '127.0.0.1');
 
 //Server's port number
 app.set('port', (process.env.PORT || 8080));
-console.log(process.env.PORT);
+
 //Specify the views folder
 app.set('views', path.join(__dirname, 'views'));
 
